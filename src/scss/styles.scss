@@ -1,3 +1,53 @@
-div {
-  background-color: tomato;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@import 'reset';
+@import 'variables';
+
+// Components
+@import 'components/status-bar';
+@import 'components/nav-bar';
+@import 'components/header';
+@import 'components/user-component';
+// Screens
+@import 'screens/login';
+@import 'screens/friends';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $default-gray;
+}
+
+.user-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__column:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    margin-right: 20px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
