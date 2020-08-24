@@ -15,3 +15,15 @@
     margin-right: 10px;
   }
 }
+
+.friends-screen {
+  padding: 0px $horizontal-space;
+  &__channel-header {
+    padding: 15px 0px;
+    margin: 15px 0px;
+    border-top: 1px solid rgba($default-gray, 0.2);
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
