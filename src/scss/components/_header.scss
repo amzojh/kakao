@@ -6,15 +6,26 @@
   justify-content: space-between;
   align-items: center;
   padding: $horizontal-space;
+  box-sizing: border-box;
 
   &__title {
     font-size: 28px;
     font-weight: 600;
   }
 
+  &__dot {
+    position: absolute;
+    left: 20px;
+    top: -5px;
+  }
+
   &__icons {
     span {
       margin-left: 20px;
+    }
+    &-relative {
+      display: inline-block;
+      position: relative;
     }
   }
 }

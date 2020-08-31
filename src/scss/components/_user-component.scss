@@ -4,18 +4,16 @@
   justify-content: space-between;
   align-items: center;
 
-  &__column {
-  }
-
   &__column:first-child {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
   &__column:last-child {
+    color: rgba(0, 0, 0, 0.4);
     display: flex;
-    justify-content: flex-end;
-    color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    flex-direction: column;
   }
 
   &__avatar {
@@ -51,8 +49,8 @@
     color: rgba(0, 0, 0, 0.5);
   }
 
-  &__column:last-child {
-    display: flex;
-    justify-content: flex-end;
+  &__time {
+    display: block;
+    margin-bottom: 5px;
   }
 }

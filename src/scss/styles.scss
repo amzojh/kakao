@@ -8,6 +8,8 @@
 @import 'components/nav-bar';
 @import 'components/header';
 @import 'components/user-component';
+@import 'components/badge';
+@import 'components/dot';
 // Screens
 @import 'screens/login';
 @import 'screens/friends';
@@ -15,4 +17,100 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: $default-gray;
+}
+
+.main-screen {
+  padding: 0px $horizontal-space;
+}
+
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+
+    span {
+      margin-top: 15px;
+    }
+    i {
+      font-size: 35px;
+    }
+  }
+}
+
+.friend-recommendations {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  span {
+    display: inline-block;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.2);
+  }
+
+  &__screen {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.open-chat {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    span {
+      opacity: 0.6;
+    }
+  }
+}
+
+.open-post {
+  display: flex;
+
+  &__title {
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 7px;
+  }
+
+  &__hashtags {
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  &__members {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+
+    &-status {
+      color: #ffb0e0;
+    }
+
+    img {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .divider {
+      width: 1px;
+      height: 15px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin: 0 5px;
+    }
+
+    &-count {
+      opacity: 0.5;
+      font-size: 14px;
+    }
+  }
 }
