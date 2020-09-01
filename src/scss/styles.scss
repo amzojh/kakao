@@ -11,11 +11,15 @@
 @import 'components/badge';
 @import 'components/dot';
 @import 'components/icon-row.scss';
+@import 'components/alt-screen-header';
+
 // Screens
 @import 'screens/login';
 @import 'screens/friends';
 @import 'screens/find';
 @import 'screens/more';
+@import 'screens/settings';
+@import 'screens/chat';
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -32,75 +36,5 @@ body {
     display: flex;
     justify-content: space-between;
     color: rgba(0, 0, 0, 0.5);
-  }
-}
-
-.settings {
-  &-screen {
-  }
-  &-header {
-    display: flex;
-
-    &__title {
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    &__column {
-    }
-  }
-
-  &__general-option {
-    padding-bottom: 20px;
-    padding: 0px $horizontal-space;
-
-    .settings__option__container:last-child {
-      border-bottom: 0px;
-    }
-  }
-
-  &__specific-option {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    padding-top: 20px;
-    padding: 0px $horizontal-space;
-    .settings__option__container:last-child {
-      border-bottom: 0px;
-    }
-  }
-
-  &__option {
-    &__title {
-      color: rgba(0, 0, 0, 0.8);
-      margin-right: 8px;
-    }
-
-    &__sub-description {
-      color: rgba(0, 0, 0, 0.5);
-    }
-
-    &__container {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      margin-bottom: 15px;
-      border-bottom: 0.25px solid rgba(0, 0, 0, 0.05);
-    }
-
-    &__icon {
-      margin-right: 15px;
-      width: 45px;
-      height: 45px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      background-color: $yellow;
-      color: white;
-    }
-
-    &__column {
-      display: flex;
-      align-items: center;
-    }
   }
 }
