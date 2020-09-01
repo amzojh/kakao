@@ -47,6 +47,19 @@
   &__subtitle {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.5);
+    display: flex;
+
+    div {
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      border: 2px solid tomato;
+      border-radius: 100%;
+      width: 22px;
+      color: tomato;
+      font-weight: 400;
+      box-sizing: border-box;
+    }
   }
 
   &__time {

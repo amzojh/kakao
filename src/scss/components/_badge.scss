@@ -8,4 +8,12 @@
   align-items: center;
   color: white;
   font-weight: 600;
+
+  &-sm {
+    @extend .badge;
+    width: 20px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 12px;
+  }
 }

@@ -18,15 +18,20 @@
   }
 }
 
-.friends-screen {
-  padding: 0px $horizontal-space;
+.friend-recommendations {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
-  &__channel-header {
-    padding: 15px 0px;
-    margin: 15px 0px;
-    border-top: 1px solid rgba($default-gray, 0.2);
+  span {
+    display: inline-block;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.2);
+  }
+
+  &__screen {
     display: flex;
-    justify-content: space-between;
-    color: rgba(0, 0, 0, 0.5);
+    height: 300px;
+    align-items: center;
+    justify-content: center;
   }
 }

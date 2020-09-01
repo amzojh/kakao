@@ -1,0 +1,43 @@
+.more-screen {
+  .icon-row {
+    margin-top: 35px;
+  }
+}
+
+.more-suggestions {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+  padding-top: 40px;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+
+    &-image {
+      width: 60px;
+      height: 60px;
+      background-color: $yellow;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+
+      i {
+        font-size: 32px;
+        color: white;
+      }
+    }
+
+    &-container {
+      display: flex;
+    }
+  }
+}

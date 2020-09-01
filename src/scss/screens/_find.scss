@@ -1,0 +1,84 @@
+.open-chat {
+  margin-bottom: 10px;
+  padding: 10px 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    span {
+      opacity: 0.6;
+    }
+  }
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid rgba($default-gray, 0.2);
+  padding-bottom: 10px;
+  &__photo {
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 7px;
+  }
+
+  &__hashtags {
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  &__heart-count {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    span {
+      margin-left: 3px;
+    }
+  }
+  &__members {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+
+    &-status {
+      color: #ffb0e0;
+    }
+
+    img {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .divider {
+      width: 1px;
+      height: 15px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin: 0 5px;
+    }
+
+    &-count {
+      opacity: 0.5;
+      font-size: 14px;
+    }
+  }
+}
