@@ -6,5 +6,20 @@
       font-size: 28px;
       font-weight: 600;
     }
+    &__column {
+      width: 33.33%;
+      display: flex;
+      justify-content: center;
+      span:last-child {
+        margin-left: 15px;
+      }
+    }
+
+    &__column:last-child {
+      justify-content: flex-end;
+    }
+    &__column:first-child {
+      justify-content: flex-start;
+    }
   }
 }

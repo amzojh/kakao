@@ -37,91 +37,46 @@
       </div>
     </header>
 
-    <main class="settings-main">
-      <div class="settings__general-option">
-        <div class="settings__option__container">
-          <div class="settings__option__column">
-            <div class="settings__option__icon">
-              <i class="fas fa-bullhorn fa-2x"></i>
+    <main class="main-screen main-chat">
+      <div class="main-chat__timestamp">Thueseday, June 30, 2020</div>
+      <div class="message">
+        <div class="message-row">
+          <img
+            class="message-row__img"
+            src="static/photos/avatar_1.jpeg"
+            alt=""
+          />
+          <div class="message-row__content">
+            <div class="message__author">Jihwan Oh</div>
+            <div class="message__info">
+              <span class="message__bubble">Hi!</span>
+              <span class="message__time">21:27</span>
             </div>
-            <h4 class="settings__option__title">Notices</h4>
-          </div>
-          <div class="settings__option__column">
-            <h4 class="settings__option__sub-description"></h4>
           </div>
         </div>
-        <div class="settings__option__container">
-          <div class="settings__option__column">
-            <div class="settings__option__icon">
-              <i class="fas fa-flask fa-2x"></i>
+        <div class="message-row message-row--own">
+          <div class="message-row__content">
+            <div class="message__info">
+              <span class="message__bubble">안녕 은아야아앙</span>
+              <span class="message__time">21:27</span>
             </div>
-            <h4 class="settings__option__title">Kakao Lab</h4>
-          </div>
-          <div class="settings__option__column">
-            <h4 class="settings__option__sub-description"></h4>
-          </div>
-        </div>
-        <div class="settings__option__container">
-          <div class="settings__option__column">
-            <div class="settings__option__icon">
-              <i class="fas fa-exclamation-circle fa-2x"></i>
-            </div>
-            <h4 class="settings__option__title">Version</h4>
-          </div>
-          <div class="settings__option__column">
-            <h4 class="settings__option__sub-description">Latest Version</h4>
-          </div>
-        </div>
-      </div>
-      <div class="settings__specific-option">
-        <div class="settings__option__container">
-          <div class="settings__option__column">
-            <div class="settings__option__icon">
-              <i class="fas fa-unlock-alt fa-2x"></i>
-            </div>
-            <h4 class="settings__option__title">Privacy</h4>
-          </div>
-          <div class="settings__option__column">
-            <h4 class="settings__option__sub-description"></h4>
-          </div>
-        </div>
-        <div class="settings__option__container">
-          <div class="settings__option__column">
-            <div class="settings__option__icon">
-              <i class="far fa-bell fa-2x"></i>
-            </div>
-            <h4 class="settings__option__title">Notification</h4>
-          </div>
-          <div class="settings__option__column">
-            <h4 class="settings__option__sub-description">Latest Version</h4>
-          </div>
-        </div>
-        <div class="settings__option__container">
-          <div class="settings__option__column">
-            <div class="settings__option__icon">
-              <i class="fas fa-user fa-2x"></i>
-            </div>
-            <h4 class="settings__option__title">Friends</h4>
-            <span class="badge-sm">N</span>
-          </div>
-          <div class="settings__option__column">
-            <h4 class="settings__option__sub-description">Latest Version</h4>
-          </div>
-        </div>
-
-        <div class="settings__option__container">
-          <div class="settings__option__column">
-            <div class="settings__option__icon">
-              <i class="far fa-comment fa-2x"></i>
-            </div>
-            <h4 class="settings__option__title">Chat</h4>
-          </div>
-          <div class="settings__option__column">
-            <h4 class="settings__option__sub-description">Latest Version</h4>
           </div>
         </div>
       </div>
     </main>
+
+    <form class="reply" action="">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-2x"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="write a message" />
+        <i class="far fa-smile-wink fa-2x"></i>
+        <button>
+          <i class="fas fa-arrow-up fa-lg"></i>
+        </button>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/56c524f05f.js"
